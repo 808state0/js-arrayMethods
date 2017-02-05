@@ -13,7 +13,8 @@
 /*1. Mr. Bonner (aka the Red Rocket, the Red Mamba) doesn't belong in this class of Hall Of Famers. Remove this imposter immediately and assign it to a new variable named `notHof` Console.log this new variable as well as the original list.*/ 
 
 var hof = ["Jordan", "Bird", "Kobe", "Duncan", "Iverson", "Bonner"];
-
+var notHof = hof.pop();
+console.log(hof);
 
 
 /* The array.push() adds one or more element to the end of an array and returns the new length of the array*/
@@ -21,7 +22,8 @@ var hof = ["Jordan", "Bird", "Kobe", "Duncan", "Iverson", "Bonner"];
 /*2. You've been tasked to do this week's grocery shopping. As you arrive at Times Supermarket, Kanye pings you to get a bottle of Hendricks gin. Add this to the existing shoppingList and console.log it.*/
 
 var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut butter oreos", "fruit loops cereal"];
-
+shoppingList.push("Hendricks gin");
+console.log(shoppingList)
 
 
 
@@ -30,6 +32,8 @@ var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut 
 /*3. Use the force, or in this case the reverse method to help Yoda make some sense with his motivational talk to the young Jedi interns.*/
 
 var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
+yoda.reverse()
+console.log(yoda);
 
 
 
@@ -38,6 +42,9 @@ var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 /*4. People been lining up for hours to get the newest iphone release. Help manage the unruly crowd of privileged customers by serving them one at a time and assiging it to a variable named `nowServing`. Console.log this new variable as well as the waitList.*/
 
 var waitList = ["Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro"];
+var nowServing = waitList.shift();
+console.log(nowServing);
+
 
 
 
@@ -53,6 +60,8 @@ array.splice(index, how many items to be removed)*/
 /*6. As head of McDonald's New Product Division, your job is to test and approve all new menu items. In the testMenu array below, all the items are approved except for "McLinguine" and "McChar-Siu Bau". Remove these items from the list and console.log the updated testMenu.*/
 
 var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau", "McChop-Chae", "McPancit"];
+testMenu.splice([2],[3]);
+console.log(testMenu);
 
 
 
@@ -66,6 +75,8 @@ var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau"
 
 var westSide = ["Dre", "2Pac", "Snoop"];
 var eastSide = ["Biggie", "Diddy", "Craig Mack"];
+var oneLove = westSide.concat(eastSide);
+console.log(oneLove);
 
 
 
@@ -74,7 +85,8 @@ var eastSide = ["Biggie", "Diddy", "Craig Mack"];
 /*8. Help Nike sell more overpriced sneakers by changing their slogan from an array into a string. Convert the shoe array and assign it to a variable named `shoeString`. Console.log this new variable.*/
 
 var shoe = ["just", "do", "it"];
-
+shoe.concat();
+console.log(shoe);
 
 
 /*The array.slice() extracts a section of an array and returns a new array.
@@ -84,8 +96,8 @@ array.slice(index start, index end)*/
 "Yeezy", "Kimmy K" and "Lamar Odom". Unfriend these ungrateful people and assign them to a new variable named `unFriend`. Console.log this new variable.*/
 
 var fbFriends = ["Khalid", "Yeezy", "Kimmy K", "Lamar Odom", "Lebron", "Warren Buffet"];
-
-
+var unFriend = fbFriends.slice(1,2,3);
+console.log(unFriend);
 
 
 
